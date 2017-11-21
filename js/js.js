@@ -84,21 +84,29 @@ var arr10 = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43];
 
 // // 11. Дан массив var arr = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43]. Выведите arr[i], где переменная i - вводит пользователь.
 // var arr11 = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43];
-
+var arr11 = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43];
+document.getElementById('btnAdd').onclick=addNew;
+function addNew() {
+	var ind = document.getElementById('in').value;
+	ind = parseInt(ind);
+	var elem = document.getElementById('el').value;
+	arr11[ind] = elem;
+	console.log(arr11);
+}
 // 12. Дан массив var arr = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43]. Выведите массив на страницу через пробел.
 var out12 = '';
-	var arr12 = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43];
-	for (var i = 0; i < arr12.length; i++) {
-		out12 += arr12[i] + ' ';
-	}
-	console.log(out12);
+var arr12 = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43];
+for (var i = 0; i < arr12.length; i++) {
+	out12 += arr12[i] + ' ';
+}
+console.log(out12);
 // 13. Дан массив var arr = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43]. Выведите массив в обратном порядке на страницу через пробел.
 var out13 = '';
-	var arr13 = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43];
-	for (var i = arr13.length-1; i>=0; i--) {
-		out13 += arr13[i] + ' ';
-	}
-	console.log(out13);
+var arr13 = ['Hi', "hello", 34, "prima", 3, 6, 1, 13, 88, 43];
+for (var i = arr13.length-1; i>=0; i--) {
+	out13 += arr13[i] + ' ';
+}
+console.log(out13);
 // Вложенные массивы
 // -------------------
 
@@ -155,5 +163,4 @@ console.log(arr19[2]);
 var arr20 = [ ['hi', 3, 'beta'], ['foo', 'jam', 'tritto']  ];
 console.log(arr20[1][0]);
 console.log(arr20[0][2]);
-
 
